@@ -1,0 +1,154 @@
+/* Hero Section---------------------------------------- */
+
+.hero {
+    background: url(../images/bitmap-banner.png) no-repeat top center;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 448px;
+    width: 100%;
+    height: 85vh;
+    &-text {
+        font-size: 65px;
+        font-weight: 500;
+        text-transform: uppercase;
+        @media screen and (max-width: 768){
+            font-size: 40px;
+        }
+        @media screen and (max-width: 425){
+            font-size: 25px;
+        }
+    }
+    &-block {
+        background-color: #fff;
+        display: inline-block;
+        margin-bottom: 0.25rem;
+        padding: 0 30px;
+        &--middle {
+            padding: 0 50px 0 30px;
+        }
+        &--bottom {
+            padding: 0 60px 0 30px;
+        }
+    }
+}
+
+/* Products Section---------------------------------------- */
+
+.articles {
+    background-color: white;
+    &-container {
+        max-width: 85%;
+        margin: auto;
+        padding: 0 0 100px;
+        @media screen and (max-width: 992px) {
+            max-width: 90%;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 100%;            
+            padding: 0 35px 100px;        
+        }
+    }
+
+    &-title {
+        font-family: $roboto;
+        font-size: 80px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 80px;
+        @media screen and (max-width: 425px) {
+            font-size: 60px;
+        }
+        &--primary {
+            color: $primary;
+        }
+        &--secondary {
+            color: #000;
+        }
+    }
+    &-subtitle {
+        color: #514B4A;        
+        font-size: 14px;
+        text-align: center;
+        margin-top: -0.5rem;
+    }
+}
+
+/* Items Section---------------------------------------- */
+.items {    
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);    
+    grid-column-gap: 70px;
+    grid-row-gap: 113px;
+    margin-top: 80px;
+    @media screen and (max-width: 768px) {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+    @media screen and (max-width: 425px) {
+        grid-template: repeat(2, 1fr) / 1fr;
+    }
+    
+    .item {
+        &-img {
+            min-width: 100%;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        &-name {
+            align-self: flex-start;            
+            font-size: 18px;
+            font-weight: bold;
+            width: 60%;
+        }
+        &-size {
+            background-color: #000;
+            border-radius: 50%;
+            margin-right: 0.5rem;            
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            > * {
+                color: #fff;
+                font-family: $roboto;
+                font-size: 21px;
+                text-transform: uppercase;
+            }
+        }
+        &-details {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+            height: 70px;
+        }
+        &-mark {            
+            font-size: 16px;
+            width: 50%;
+        }
+        &-price {
+            font-family: $roboto;
+            font-size: 36.52px;
+            font-weight: normal;
+        }
+        &-profile {
+            margin-top: 1rem;
+            text-align: center;
+            .img-profile {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;                
+            }
+        }
+    }
+}
