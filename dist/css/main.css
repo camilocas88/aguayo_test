@@ -243,16 +243,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media screen and (max-width: 768px) {
-    .header {
-      flex-wrap: wrap; } }
   .header-navbar {
     margin-left: 84px; }
-    @media screen and (max-width: 768px) {
-      .header-navbar {
-        margin-left: 0;
-        text-align: center;
-        width: 100%; } }
   .header-link {
     color: #fff;
     font-size: 14px;
@@ -260,9 +252,6 @@ img {
     text-transform: capitalize;
     padding: 0 30px;
     transition: all 0.3s ease-in-out; }
-    @media screen and (max-width: 768px) {
-      .header-link {
-        padding: 5px; } }
     .header-link:hover {
       color: #FE7676; }
     .header-link:first-child {
@@ -273,24 +262,12 @@ img {
     color: #FE7676; }
   .header-search {
     margin-right: 50px; }
-    @media screen and (max-width: 768px) {
-      .header-search {
-        margin-right: 0;
-        width: 100%; } }
     .header-search .input-group {
       display: flex;
       flex-wrap: wrap;
       align-items: stretch;
       position: relative;
       width: 100%; }
-      @media screen and (max-width: 768px) {
-        .header-search .input-group {
-          margin: auto;
-          width: 60%; } }
-      @media screen and (max-width: 425px) {
-        .header-search .input-group {
-          margin: auto;
-          width: 90%; } }
       .header-search .input-group .input {
         background-color: #fff;
         border: 1px solid #fff;
@@ -331,12 +308,6 @@ img {
     font-size: 65px;
     font-weight: 500;
     text-transform: uppercase; }
-    @media screen and (max-width: 768) {
-      .hero-text {
-        font-size: 40px; } }
-    @media screen and (max-width: 425) {
-      .hero-text {
-        font-size: 25px; } }
   .hero-block {
     background-color: #fff;
     display: inline-block;
@@ -354,13 +325,6 @@ img {
     max-width: 85%;
     margin: auto;
     padding: 0 0 100px; }
-    @media screen and (max-width: 992px) {
-      .articles-container {
-        max-width: 90%; } }
-    @media screen and (max-width: 768px) {
-      .articles-container {
-        max-width: 100%;
-        padding: 0 35px 100px; } }
   .articles-title {
     font-family: "Montserrat", sans-serif;
     font-size: 90px;
@@ -368,13 +332,10 @@ img {
     text-align: center;
     text-transform: capitalize;
     margin-top: 80px; }
-    @media screen and (max-width: 425px) {
-      .articles-title {
-        font-size: 60px; } }
     .articles-title--primary {
       color: #FE7676; }
     .articles-title--secondary {
-      color: #000; }
+      color: black; }
   .articles-subtitle {
     color: #514B4A;
     font-size: 14px;
@@ -389,60 +350,100 @@ img {
   grid-column-gap: 70px;
   grid-row-gap: 113px;
   margin-top: 80px; }
-  @media screen and (max-width: 768px) {
-    .items {
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr); } }
-  @media screen and (max-width: 425px) {
-    .items {
-      grid-template: repeat(2, 1fr)/1fr; } }
-  .items .item-img {
-    min-width: 100%; }
-  .items .item-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px; }
-  .items .item-name {
-    align-self: flex-start;
-    font-size: 18px;
-    font-weight: bold;
-    width: 60%; }
-  .items .item-size {
-    background-color: #000;
-    border-radius: 50%;
-    margin-right: 0.5rem;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .items .item-size > * {
-      color: #fff;
-      font-family: "Roboto", sans-serif;
-      font-size: 21px;
-      text-transform: uppercase; }
-  .items .item-details {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px; }
-  .items .item-mark {
+
+.item-img {
+  min-width: 100%; }
+  .item-img:hover {
+    color: black;
+    opacity: 0.9;
+    transition: all 0.5s ease-out; }
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; }
+
+.item-name {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60%; }
+
+.item-size {
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .item-size > * {
+    color: #fff;
     font-family: "Roboto", sans-serif;
-    line-height: 22pt;
-    font-weight: 400;
-    font-size: 18px;
-    width: 50%; }
-  .items .item-price {
-    font-family: "Roboto", sans-serif;
-    font-size: 36.52px;
-    font-weight: lighter; }
-  .items .item-profile {
-    margin-top: 1rem;
-    text-align: center; }
-    .items .item-profile .img-profile {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%; }
+    font-size: 21px;
+    text-transform: uppercase; }
+
+.item-details {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; }
+
+.item-mark {
+  font-family: "Roboto", sans-serif;
+  line-height: 22pt;
+  font-weight: 400;
+  font-size: 18px;
+  width: 50%; }
+
+.item-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 36.52px;
+  font-weight: lighter; }
+
+.item-profile {
+  margin-top: 1rem;
+  text-align: center; }
+  .item-profile .img-profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; }
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; }
+    .header-navbar {
+      margin-left: 0;
+      text-align: center;
+      width: 100%; }
+    .header-link {
+      padding: 5px; }
+    .header-search {
+      margin-right: 0;
+      width: 100%; }
+      .header-search .input-group {
+        margin: auto;
+        width: 60%; }
+  .hero-text {
+    font-size: 30px; }
+  .articles-container {
+    max-width: 100%;
+    padding: 0 35px 100px; }
+  .articles-title {
+    font-size: 60px; }
+  .items {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .header .input-group {
+    margin: auto;
+    width: 70%; }
+  .hero-block {
+    display: none; }
+  .items {
+    grid-template: repeat(2, 1fr)/1fr; } }

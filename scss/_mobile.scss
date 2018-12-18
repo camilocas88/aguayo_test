@@ -1,0 +1,72 @@
+@include mediaXl {
+
+}
+
+@include mediaLg {
+
+}
+
+@include mediaMd {
+  .header {
+    flex-wrap: wrap;
+    &-navbar {
+        margin-left: 0;
+        text-align: center;
+        width: 100%; 
+    }
+    &-link {
+        padding: 5px; 
+    }
+    &-search {
+        margin-right: 0;            
+        width: 100%;
+        
+        .input-group {
+            margin: auto;
+            width: 60%;
+        }
+    }
+  }
+
+  .hero {
+    &-text {
+        font-size: 30px;
+    }
+  }
+
+  .articles {
+    &-container{
+        max-width: 100%;            
+        padding: 0 35px 100px;
+    }
+    &-title{
+        font-size: 60px;
+    }
+  }
+
+  .items {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+  }
+}
+
+@include mediaSm {
+.header {
+    .input-group {
+        margin: auto;
+        width: 70%;
+    }
+}
+.hero {
+    &-block {
+        display: none;
+    }
+  }
+.items {
+    grid-template: repeat(2, 1fr) / 1fr;
+}
+}
+
+@include mediaSs {
+
+}

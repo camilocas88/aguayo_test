@@ -1,8 +1,9 @@
+//config file
+@import "config";
 // Fonts
 @import "fonts";
-
-// Variables
-@import "variables";
+//menu
+@import "menu";
 
 // Base
 @import "base";
@@ -12,3 +13,7 @@
 
 // Pages
 @import "home";
+
+@import "mobile";
+
+
