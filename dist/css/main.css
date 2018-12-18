@@ -362,9 +362,9 @@ img {
         max-width: 100%;
         padding: 0 35px 100px; } }
   .articles-title {
-    font-family: "Roboto", sans-serif;
-    font-size: 80px;
-    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-size: 90px;
+    font-weight: lighter;
     text-align: center;
     text-transform: capitalize;
     margin-top: 80px; }
@@ -379,7 +379,8 @@ img {
     color: #514B4A;
     font-size: 14px;
     text-align: center;
-    margin-top: -0.5rem; }
+    margin-top: -0.5rem;
+    letter-spacing: 5pt; }
 
 /* Items Section---------------------------------------- */
 .items {
@@ -429,12 +430,15 @@ img {
     align-items: center;
     height: 70px; }
   .items .item-mark {
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 22pt;
+    font-weight: 400;
+    font-size: 18px;
     width: 50%; }
   .items .item-price {
     font-family: "Roboto", sans-serif;
     font-size: 36.52px;
-    font-weight: normal; }
+    font-weight: lighter; }
   .items .item-profile {
     margin-top: 1rem;
     text-align: center; }

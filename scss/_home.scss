@@ -53,9 +53,10 @@
     }
 
     &-title {
-        font-family: $roboto;
-        font-size: 80px;
-        font-weight: 300;
+        font-family: $montserrat;
+        // height: 100;
+        font-size: 90px;
+        font-weight: lighter;
         text-align: center;
         text-transform: capitalize;
         margin-top: 80px;
@@ -74,6 +75,7 @@
         font-size: 14px;
         text-align: center;
         margin-top: -0.5rem;
+        letter-spacing: 5pt;
     }
 }
 
@@ -132,14 +134,17 @@
             align-items: center;            
             height: 70px;
         }
-        &-mark {            
-            font-size: 16px;
+        &-mark {
+            font-family: $roboto; 
+            line-height: 22pt;
+            font-weight: 400;           
+            font-size: 18px;
             width: 50%;
         }
         &-price {
             font-family: $roboto;
             font-size: 36.52px;
-            font-weight: normal;
+            font-weight: lighter;
         }
         &-profile {
             margin-top: 1rem;
