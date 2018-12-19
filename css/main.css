@@ -244,7 +244,20 @@ img {
   justify-content: space-between;
   align-items: center; }
   .header-navbar {
-    margin-left: 84px; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  .header li {
+    float: left;
+    padding-left: 50px; }
+    .header li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      padding: 5px; }
   .header-link {
     color: #fff;
     font-size: 14px;
