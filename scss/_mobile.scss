@@ -3,29 +3,21 @@
 }
 
 @include mediaLg {
-
+    .items {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    
+      }
 }
 
 @include mediaMd {
-  .header {
-    flex-wrap: wrap;
-    &-navbar {
-        margin-left: 0;
-        text-align: center;
-        width: 100%; 
-    }
-    &-link {
-        padding: 5px; 
-    }
-    &-search {
-        margin-right: 0;            
-        width: 100%;
-        
-        .input-group {
-            margin: auto;
-            width: 60%;
-        }
-    }
+  .header__menu{
+      flex-direction: column;
+      border: 1px solid red;
+      padding-bottom: 15px;
+
+      &-search {
+          width: 90%;
+      }
   }
 
   .hero {
@@ -63,7 +55,7 @@
     }
   }
 .items {
-    grid-template: repeat(2, 1fr) / 1fr;
+    grid-template: repeat(1, 1fr) / 1fr;
 }
 }
 

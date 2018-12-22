@@ -1,0 +1,90 @@
+.header {
+    background: $secondary-color;   
+    width: 100%;
+    top: 0;
+
+    &__menu {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &-search {
+            display: inline-block;
+            margin-right: 1em;
+
+            .input-group {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                position: relative;
+                width: 100%;
+
+                .input {
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 8px 0 0 8px;
+                    box-shadow: none;
+                    outline: none;        
+                    padding: 0.5rem;
+                    flex: 1 1 auto;
+                    width: 1%;
+                    height: 27px;
+                }
+
+                .input-group-next {
+                    display: flex;
+                    margin-left: -1px;                
+                    .input-btn {
+                        background: #fff;
+                        border-radius: 0 8px 8px 0;
+                        border: 1px solid #fff;
+                        cursor: pointer;
+                        height: 27px;            
+                        outline: none;
+                        padding: 0 10px;
+                        z-index: 2;
+                        .icon-search {
+                            color: #4a4a4a;
+                        }            
+                    }
+                }
+            }
+        }
+
+        &-navbar {
+            display: inline-block;
+            text-align: left;
+            // padding: 1rem;
+
+            &-link {
+                color: white;
+                display: inline-block;
+                text-emphasis: left;
+                padding: 1rem;
+                text-align: center;
+                font-size: 14px;
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                
+            }
+            .active {
+                color: $primary-color;
+            }
+
+            &-btn {
+                display: none;
+                color: white;
+            }
+            
+            
+        
+        }
+    }
+}
+
